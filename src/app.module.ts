@@ -13,11 +13,7 @@ import { CategoryModule } from './category/category.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'dpg-d6rombpj16oc73earrt0-a.oregon-postgres.render.com',
-      port: 5432,
-      username: 'node_demo_vkg6_user',
-      password: 'kB6kTqvq1qZMlV5VWWbkK5sP5ayIMeIf',
-      database: 'node_demo_vkg6',
+      url: process.env.DATABASE_URL,
       ssl: {
         rejectUnauthorized: false,
       },
