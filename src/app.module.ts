@@ -13,7 +13,7 @@ import { CategoryModule } from './category/category.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      url: process.env.DATABASE_URL,
+      url: 'postgresql://node_demo_vkg6_user:kB6kTqvq1qZMlV5VWWbkK5sP5ayIMeIf@dpg-d6rombpj16oc73earrt0-a.oregon-postgres.render.com/node_demo_vkg6',
       ssl: {
         rejectUnauthorized: false,
       },
