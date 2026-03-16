@@ -11,4 +11,3 @@ export const AppDataSource = new DataSource({
   migrations: ['src/migration/*.ts'],
   synchronize: false,
 });
-postgresql://node_demo_vkg6_user:kB6kTqvq1qZMlV5VWWbkK5sP5ayIMeIf@dpg-d6rombpj16oc73earrt0-a.oregon-postgres.render.com/node_demo_vkg6
