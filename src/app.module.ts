@@ -13,11 +13,11 @@ import { CategoryModule } from './category/category.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
+      host: 'dpg-d6rombpj16oc73earrt0-a.oregon-postgres.render.com',
       port: 5432,
-      username: 'postgres',
-      password: 'kmphitech',
-      database: 'vibeQuest',
+      username: 'node_demo_vkg6_user',
+      password: 'kB6kTqvq1qZMlV5VWWbkK5sP5ayIMeIf',
+      database: 'node_demo_vkg6',
       autoLoadEntities: true,
       synchronize: false,
     }),
