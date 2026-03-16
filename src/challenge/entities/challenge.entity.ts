@@ -68,4 +68,9 @@ export class Challenge {
   get status(): string {
     return this.endDate < new Date() ? 'Expired' : 'Active';
   }
+
+  @Expose()
+  get challenge_post(): string {
+    return 'http://localhost.com/public/uploads/images/' + this.post;
+  }
 }

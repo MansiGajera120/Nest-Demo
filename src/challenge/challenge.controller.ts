@@ -56,7 +56,7 @@ export class ChallengeController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.challengeService.findOne(+id);
+    return this.challengeService.findOne(id);
   }
 
   @Delete(':id')

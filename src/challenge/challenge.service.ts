@@ -54,8 +54,9 @@ export class ChallengeService {
     return { list, totalRecords };
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} challenge`;
+  async findOne(id: string) {
+    const challenge = await this.challengeRepository.findOne({ where: { id } });
+    return challenge;
   }
 
   remove(id: number) {
