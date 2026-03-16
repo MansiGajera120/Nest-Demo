@@ -18,6 +18,9 @@ import { CategoryModule } from './category/category.module';
       username: 'node_demo_vkg6_user',
       password: 'kB6kTqvq1qZMlV5VWWbkK5sP5ayIMeIf',
       database: 'node_demo_vkg6',
+      ssl: {
+        rejectUnauthorized: false,
+      },
       autoLoadEntities: true,
       synchronize: false,
     }),
